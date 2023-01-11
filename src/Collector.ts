@@ -23,7 +23,7 @@ const DefaultConfig: Interfaces.CollectorConfig = {
     pollingInterval: 60,
     updateInterval: 360,
     historyDays: 0.25,
-    nodeList: 'https://raw.githubusercontent.com/turtlecoin/turtlecoin-nodes-json/master/turtlecoin-nodes.json'
+    nodeList: 'https://raw.githubusercontent.com/2acoin/2acoin-nodes-json/master/2acoin-nodes.json'
 };
 
 /**

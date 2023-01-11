@@ -1,6 +1,6 @@
-![Prerequisite](https://img.shields.io/badge/node-%3E%3D12-blue.svg) [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/TurtleCoin/turtlecoin-node-monitor#readme) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/TurtleCoin/turtlecoin-node-monitor/graphs/commit-activity) [![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-yellow.svg)](https://github.com/TurtleCoin/turtlecoin-node-monitor/blob/master/LICENSE) [![Twitter: TurtlePay](https://img.shields.io/twitter/follow/_TurtleCoin.svg?style=social)](https://twitter.com/_TurtleCoin)
+![Prerequisite](https://img.shields.io/badge/node-%3E%3D12-blue.svg) [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/2acoin/2acoin-node-monitor#readme) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/2aoin/2acoin-node-monitor/graphs/commit-activity) [![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-yellow.svg)](https://github.com/2acoin/2acoin-node-monitor/blob/master/LICENSE) [![Twitter: 2ACoin](https://img.shields.io/twitter/follow/2ACoin.svg?style=social)](https://twitter.com/2ACoin)
 
-[![NPM](https://nodeico.herokuapp.com/@turtlecoin/node-monitor.svg)](https://npmjs.com/package/@turtlecoin/node-monitor)
+[![NPM](https://nodeico.herokuapp.com/@2acoin/node-monitor.svg)](https://npmjs.com/package/@2acoin/node-monitor)
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@
     
 ## Documentation
 
-Full library documentation is available at [https://node-monitor.turtlecoin.dev](https://node-monitor.turtlecoin.dev)
+Full library documentation is available at [https://node-monitor.2acoin.org](https://node-monitor.2acoin.org)
 
 ## Install
 
@@ -20,8 +20,8 @@ Full library documentation is available at [https://node-monitor.turtlecoin.dev]
 
 ```shell
 npm install -g yarn
-git clone https://github.com/turtlecoin/turtlecoin-node-monitor
-cd turtlecoin-node-monitor
+git clone https://github.com/2acoin/2acoin-node-monitor
+cd 2acoin-node-monitor
 yarn && yarn build
 ```
 
@@ -35,7 +35,7 @@ export DB_HOST=localhost
 export DB_PORT=3306
 export DB_USER=yourdbusername
 export DB_PASS=yourdbpassword
-export DB_NAME=turtlecoin
+export DB_NAME=2acoin
 yarn start
 ```
 
@@ -49,7 +49,7 @@ export DB_HOST=localhost
 export DB_PORT=3306
 export DB_USER=yourdbusername
 export DB_PASS=yourdbpassword
-export DB_NAME=turtlecoin
+export DB_NAME=2acoin
 yarn start
 ```
 
@@ -71,19 +71,19 @@ yarn start
 export NODE_HISTORY_DAYS=<# of days to keep history (default: 6 hours)>
 export NODE_UPDATE_INTERVAL=<# of seconds between updating node list (default: 1 hour)>
 export NODE_POLLING_INTERVAL=<# of seconds between checking nodes (default: 120s)>
-export NODE_LIST_URL=<Full URL to node list (default: turtlecoin-nodes-json)>
+export NODE_LIST_URL=<Full URL to node list (default: 2acoin-nodes-json)>
 ```
 
 ### As a Module in your App
 
 ```sh
-yarn add @turtlecoin/node-monitor
+yarn add @2acoin/node-monitor
 ```
 
 #### Sample Code
 
 ```javascript
-import { NodeMonitorDB, getDatabase } from '@turtlecoin/node-monitor';
+import { NodeMonitorDB, getDatabase } from '@2acoin/node-monitor';
 
 (async() => {
   const database = await getDatabase();
@@ -96,12 +96,12 @@ import { NodeMonitorDB, getDatabase } from '@turtlecoin/node-monitor';
 
 ## Author
 
-**The TurtleCoin Developers**
+**The 2ACoin & TurtleCoin Developers**
 
-* Twitter: [@turtlecoin](https://twitter.com/_turtlecoin )
-* Github: [@turtlecoin](https://github.com/turtlecoin)
+* Twitter: [@2ACoin](https://twitter.com/2acoin )
+* Github: [@2ACoin](https://github.com/2acoin)
 
 ## License
 
-Copyright © 2019-2020 [The TurtleCoin Developers](https://github.com/turtlecoin).<br />
-This project is [AGPL-3.0](https://github.com/turtlecoin/cryptodira/blob/master/LICENSE) licensed.
+Copyright © 2019-2023 [The 2ACoin Developers](https://github.com/2acoin).<br />
+This project is [AGPL-3.0](https://github.com/2acoin/cryptodira/blob/master/LICENSE) licensed.

@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TurtleCoin Node Monitor</title>
-	<meta name="description" content="Documentation for TurtleCoin Node Monitor">
+	<title>2ACoin Node Monitor</title>
+	<meta name="description" content="Documentation for 2ACoin Node Monitor">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -60,8 +60,8 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<p><img src="https://img.shields.io/badge/node-%3E%3D12-blue.svg" alt="Prerequisite"> <a href="https://github.com/TurtleCoin/turtlecoin-node-monitor#readme"><img src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" alt="Documentation"></a> <a href="https://github.com/TurtleCoin/turtlecoin-node-monitor/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance"></a> <a href="https://github.com/TurtleCoin/turtlecoin-node-monitor/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-AGPL--3.0-yellow.svg" alt="License: AGPL-3.0"></a> <a href="https://twitter.com/_TurtleCoin"><img src="https://img.shields.io/twitter/follow/_TurtleCoin.svg?style=social" alt="Twitter: TurtlePay"></a></p>
-				<p><a href="https://npmjs.com/package/@turtlecoin/node-monitor"><img src="https://nodeico.herokuapp.com/@turtlecoin/node-monitor.svg" alt="NPM"></a></p>
+				<p><img src="https://img.shields.io/badge/node-%3E%3D12-blue.svg" alt="Prerequisite"> <a href="https://github.com/2acoin/2acoin-node-monitor#readme"><img src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" alt="Documentation"></a> <a href="https://github.com/2acoin/2acoin-node-monitor/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance"></a> <a href="https://github.com/2acoin/2acoin-node-monitor/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-AGPL--3.0-yellow.svg" alt="License: AGPL-3.0"></a> <a href="https://twitter.com/2ACoin"><img src="https://img.shields.io/twitter/follow/2ACoin.svg?style=social" alt="Twitter: 2ACoin"></a></p>
+				<p><a href="https://npmjs.com/package/@2acoin/node-monitor"><img src="https://nodeico.herokuapp.com/@2acoin/node-monitor.svg" alt="NPM"></a></p>
 				<a href="#prerequisites" id="prerequisites" style="color: inherit; text-decoration: none;">
 					<h2>Prerequisites</h2>
 				</a>
@@ -77,7 +77,7 @@
 				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
 					<h2>Documentation</h2>
 				</a>
-				<p>Full library documentation is available at <a href="https://node-monitor.turtlecoin.dev">https://node-monitor.turtlecoin.dev</a></p>
+				<p>Full library documentation is available at <a href="https://node-monitor.2acoin.org">https://node-monitor.2acoin.org</a></p>
 				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
 					<h2>Install</h2>
 				</a>
@@ -85,8 +85,8 @@
 					<h3>Collection Service</h3>
 				</a>
 				<pre><code class="language-shell">npm install -g yarn
-git clone https://github.com/turtlecoin/turtlecoin-node-monitor
-cd turtlecoin-node-monitor
+git clone https://github.com/2acoin/2acoin-node-monitor
+cd 2acoin-node-monitor
 yarn &amp;&amp; yarn build</code></pre>
 				<a href="#mysqlmariadb" id="mysqlmariadb" style="color: inherit; text-decoration: none;">
 					<h4>MySQL/MariaDB</h4>
@@ -99,7 +99,7 @@ yarn &amp;&amp; yarn build</code></pre>
 <span class="hljs-built_in">export</span> DB_PORT=3306
 <span class="hljs-built_in">export</span> DB_USER=yourdbusername
 <span class="hljs-built_in">export</span> DB_PASS=yourdbpassword
-<span class="hljs-built_in">export</span> DB_NAME=turtlecoin
+<span class="hljs-built_in">export</span> DB_NAME=2acoin
 yarn start</code></pre>
 				<a href="#postgres" id="postgres" style="color: inherit; text-decoration: none;">
 					<h4>Postgres</h4>
@@ -112,7 +112,7 @@ yarn start</code></pre>
 <span class="hljs-built_in">export</span> DB_PORT=3306
 <span class="hljs-built_in">export</span> DB_USER=yourdbusername
 <span class="hljs-built_in">export</span> DB_PASS=yourdbpassword
-<span class="hljs-built_in">export</span> DB_NAME=turtlecoin
+<span class="hljs-built_in">export</span> DB_NAME=2acoin
 yarn start</code></pre>
 				<a href="#sqlite" id="sqlite" style="color: inherit; text-decoration: none;">
 					<h4>SQLite</h4>
@@ -130,11 +130,11 @@ yarn start</code></pre>
 				<pre><code class="language-sh"><span class="hljs-built_in">export</span> NODE_HISTORY_DAYS=&lt;<span class="hljs-comment"># of days to keep history (default: 6 hours)&gt;</span>
 <span class="hljs-built_in">export</span> NODE_UPDATE_INTERVAL=&lt;<span class="hljs-comment"># of seconds between updating node list (default: 1 hour)&gt;</span>
 <span class="hljs-built_in">export</span> NODE_POLLING_INTERVAL=&lt;<span class="hljs-comment"># of seconds between checking nodes (default: 120s)&gt;</span>
-<span class="hljs-built_in">export</span> NODE_LIST_URL=&lt;Full URL to node list (default: turtlecoin-nodes-json)&gt;</code></pre>
+<span class="hljs-built_in">export</span> NODE_LIST_URL=&lt;Full URL to node list (default: 2acoin-nodes-json)&gt;</code></pre>
 				<a href="#as-a-module-in-your-app" id="as-a-module-in-your-app" style="color: inherit; text-decoration: none;">
 					<h3>As a Module in your App</h3>
 				</a>
-				<pre><code class="language-sh">yarn add @turtlecoin/node-monitor</code></pre>
+				<pre><code class="language-sh">yarn add @2acoin/node-monitor</code></pre>
 				<a href="#sample-code" id="sample-code" style="color: inherit; text-decoration: none;">
 					<h4>Sample Code</h4>
 				</a>
@@ -150,16 +150,16 @@ yarn start</code></pre>
 				<a href="#author" id="author" style="color: inherit; text-decoration: none;">
 					<h2>Author</h2>
 				</a>
-				<p><strong>The TurtleCoin Developers</strong></p>
+				<p><strong>The 2ACoin & TurtleCoin Developers</strong></p>
 				<ul>
-					<li>Twitter: <a href="https://twitter.com/_turtlecoin">@turtlecoin</a></li>
-					<li>Github: <a href="https://github.com/turtlecoin">@turtlecoin</a></li>
+					<li>Twitter: <a href="https://twitter.com/2acoin">@2acoin</a></li>
+					<li>Github: <a href="https://github.com/2acoin">@2acoin</a></li>
 				</ul>
 				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
 					<h2>License</h2>
 				</a>
-				<p>Copyright © 2019-2020 <a href="https://github.com/turtlecoin">The TurtleCoin Developers</a>.<br />
-				This project is <a href="https://github.com/turtlecoin/cryptodira/blob/master/LICENSE">AGPL-3.0</a> licensed.</p>
+				<p>Copyright © 2019-2023 <a href="https://github.com/2acoin">2ACoin Developers</a>.<br />
+				This project is <a href="https://github.com/2acoin/cryptodira/blob/master/LICENSE">AGPL-3.0</a> licensed.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
